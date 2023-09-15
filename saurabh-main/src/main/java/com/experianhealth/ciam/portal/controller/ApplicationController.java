@@ -1,4 +1,4 @@
-package com.experianhealth.ciam.scimapi.service.impl;
+package com.experianhealth.ciam.portal.controller;
 
 import java.util.List;
 import java.util.Optional;

@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.experianhealth</groupId>
-    <artifactId>scim-api-14.09.20231</artifactId>
+    <artifactId>MYAPPS</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>scim-api</name>
     <description>Scim API</description>
