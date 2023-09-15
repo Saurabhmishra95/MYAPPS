@@ -2,42 +2,15 @@ package com.experianhealth.ciam.forgerock.model;
 
 import java.util.List;
 
-public class Application {
+public class frApplication {
 	 private String name;
 		private String _id;
 	    private String _rev;
 	    private String _refResourceCollection;
 	    private String _refResourceId;
 	    private String _ref;
-	    private List<Application> effectiveApplications;
-	    private String description;
-	    private List<String> mappingNames;
-	    private String url;
-	    private String icon;
-	    public String getDescription() {
-			return description;
-		}
-		public void setDescription(String description) {
-			this.description = description;
-		}
-		public List<String> getMappingNames() {
-			return mappingNames;
-		}
-		public void setMappingNames(List<String> mappingNames) {
-			this.mappingNames = mappingNames;
-		}
-		public String getUrl() {
-			return url;
-		}
-		public void setUrl(String url) {
-			this.url = url;
-		}
-		public String getIcon() {
-			return icon;
-		}
-		public void setIcon(String icon) {
-			this.icon = icon;
-		}
+	    private List<frApplication> effectiveApplications;
+		
 		public String getName() {
 		return name;
 	}
@@ -74,10 +47,10 @@ public class Application {
 	public void set_ref(String _ref) {
 		this._ref = _ref;
 	}
-	public List<Application> getEffectiveApplications() {
+	public List<frApplication> getEffectiveApplications() {
 		return effectiveApplications;
 	}
-	public void setEffectiveApplications(List<Application> effectiveApplications) {
+	public void setEffectiveApplications(List<frApplication> effectiveApplications) {
 		this.effectiveApplications = effectiveApplications;
 	}
 	

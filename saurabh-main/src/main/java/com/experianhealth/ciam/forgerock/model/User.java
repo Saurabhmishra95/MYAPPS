@@ -68,7 +68,7 @@ public class User {
     private String postalCode;
     private String country;
     private List<EffectiveRole> effectiveRoles;
-    private List<Application> effectiveApplications;  // Newly added
+    private List<frApplication> effectiveApplications;  
     private String _rev;
     private String accountStatus;
 
@@ -169,11 +169,11 @@ public class User {
         this.effectiveRoles = effectiveRoles;
     }
 
-    public List<Application> getEffectiveApplications() {
+    public List<frApplication> getEffectiveApplications() {
         return effectiveApplications;
     }
 
-    public void setEffectiveApplications(List<Application> effectiveApplications) {
+    public void setEffectiveApplications(List<frApplication> effectiveApplications) {
         this.effectiveApplications = effectiveApplications;
     }
 
@@ -208,7 +208,7 @@ public class User {
                 .add("postalCode='" + postalCode + "'")
                 .add("country='" + country + "'")
                 .add("effectiveRoles=" + effectiveRoles)
-                .add("effectiveApplications=" + effectiveApplications)  // Newly added
+                .add("effectiveApplications=" + effectiveApplications)  
                 .add("_rev='" + _rev + "'")
                 .add("accountStatus='" + accountStatus + "'")
                 .toString();

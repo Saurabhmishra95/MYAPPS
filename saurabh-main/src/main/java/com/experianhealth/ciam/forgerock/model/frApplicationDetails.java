@@ -1,8 +1,8 @@
-package com.experianhealth.ciam.forgerock.service;
+package com.experianhealth.ciam.forgerock.model;
 
 import java.util.List;
 
-public class ApplicationDetails {
+public class frApplicationDetails {
 	    private String _id;
 	    private String _rev;
 	    private String description;
@@ -53,6 +53,4 @@ public class ApplicationDetails {
 			this.name = name;
 		}
 		
-
-    // Other fields, getters, setters, and constructors
 }
