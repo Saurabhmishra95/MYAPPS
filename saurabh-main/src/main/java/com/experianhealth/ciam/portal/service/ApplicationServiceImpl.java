@@ -34,6 +34,14 @@ import com.experianhealth.ciam.portal.utility.ApplicationDetailsMapper;
 	    @Autowired
 	    private ApplicationDetailsMapper applicationDetailsMapper;
 
+	    
+	    public ApplicationServiceImpl(ForgeRockAMService forgeRockAMService, ManagedUserService userService, ManagedApplicationService managedApplicationService, ApplicationDetailsMapper applicationDetailsMapper) {
+	        this.forgeRockAMService = forgeRockAMService;
+	        this.userService = userService;
+	        this.managedApplicationService = managedApplicationService;
+	        this.applicationDetailsMapper = applicationDetailsMapper;
+	    }
+
 	    @Override
 	    public AppResponse getApplicationDetails(String token) {
 	        User user = forgeRockAMService.getUserInfo(token);
